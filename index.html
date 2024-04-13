@@ -12,27 +12,27 @@
 </head>
 
 <body class="container bg-secondary-subtle">
-    <main class="container shadow bg-white my-3 rounded-3">
-        <header class="container text-center">
+    <main class="container shadow bg-white my-3 rounded-3 d-flex flex-column justify-content-center">
+        <header class="container col-11 text-center p-0">
             <img class="img-fluid w-100 my-3" src="./assets/home.jpg" alt="banner">
             <p class="display-6 fw-normal">Menu - Faça a Sua Escolha</p>
         </header>
-        <section class="sectionContainer">
-            <header>
-                <p class="sectionTitle">Prato Principal</p>
-                <p class="sectionSubtitle">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
+        <section class="container col-11 shadow rounded-3 mt-3 my-3 pb-5 ">
+            <header class=" container text-center">
+                <p class="fs-4 fw-bolder mb-0 mt-3">Prato Principal</p>
+                <p class="fs-6 fw-bolder mb-3">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
             </header>
-            <div class="optionsContainer" id="mainDishes"></div>
+            <div class="d-flex justify-content-around" id="mainDishes"></div>
         </section>
-        <section class="sectionContainer">
-            <header>
-                <p class="sectionTitle">Acompanhamentos</p>
-                <p class="sectionSubtitle">Porções para uma pessoa.</p>
+        <section class="container col-11 shadow rounded-3 mt-3 my-3 pb-5 ">
+            <header class=" container text-center">
+                <p class="fs-4 fw-bolder mb-0 mt-3">Acompanhamentos</p>
+                <p class="fs-6 fw-bolder mb-3">Porções para uma pessoa.</p>
             </header>
-            <div class="optionsContainer" id="sideDishes"></div>
+            <div class="d-flex justify-content-around" id="sideDishes"></div>
         </section>
-        <section class="sectionContainer">
-            <p class="sectionTitle">Dados Pessoais</p>
+        <section class="container col-11 shadow rounded-3 mt-3 my-3 pb-5 text-center">
+            <p class="fs-4 fw-bolder mb-0 mt-3">Dados Pessoais</p>
             <div class="formContainer">
                 <form class="formPersonalData" id="formPersonalData">
                     <input class="input" type="text" placeholder="Nome" id="name" required>

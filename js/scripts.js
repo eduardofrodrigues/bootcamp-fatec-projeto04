@@ -52,12 +52,12 @@ const sideDishesProducts = {
 
 Object.keys(mainDishesProducts).forEach((key) => {
   mainDishes.innerHTML += `
-      <div class="option" id="${mainDishesProducts[key].id}">
-        <div class="productImageContainer">
-            <img class="productImage" src="${mainDishesProducts[key].image}" alt="${mainDishesProducts[key].name}">
+      <div class="w-25 d-flex flex-column justify-content-center align-items-center rounded-3 shadow mt-3 mb-3 p-3 text-center" id="${mainDishesProducts[key].id}">
+        <div class="w-100 h-75">
+            <img class="img-fluid w-100 h-100" src="${mainDishesProducts[key].image}" alt="${mainDishesProducts[key].name}">
         </div>
-        <p class="disheName">${mainDishesProducts[key].name}</p>
-        <p class="price">${formatter.format(mainDishesProducts[key].price)}</p>
+        <p class="fs-6 fw-bolder my-1">${mainDishesProducts[key].name}</p>
+        <p class="fs-4 fw-bolder my-1 text-success price">${formatter.format(mainDishesProducts[key].price)}</p>
         <div class="quantity buttons_added">
             <input type="button" value="-" class="minus">
               <input id="${mainDishesProducts[key].id}" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
@@ -69,12 +69,12 @@ Object.keys(mainDishesProducts).forEach((key) => {
 
 Object.keys(sideDishesProducts).forEach((key) => {
   sideDishes.innerHTML += `
-      <div class="option" id="${sideDishesProducts[key].id}">
-        <div class="productImageContainer">
-            <img class="productImage" src="${sideDishesProducts[key].image}" alt="${sideDishesProducts[key].name}">
+      <div class="w-25 d-flex flex-column justify-content-center align-items-center rounded-3 shadow mt-3 mb-3 p-3 text-center" id="${sideDishesProducts[key].id}">
+        <div class="w-100 h-75">
+            <img class="img-fluid w-100 h-100" src="${sideDishesProducts[key].image}" alt="${sideDishesProducts[key].name}">
         </div>
-        <p class="disheName">${sideDishesProducts[key].name}</p>
-        <p class="price">${formatter.format(sideDishesProducts[key].price)}</p>
+        <p class="fs-6 fw-bolder my-1">${sideDishesProducts[key].name}</p>
+        <p class="fs-4 fw-bolder my-1 text-success price">${formatter.format(sideDishesProducts[key].price)}</p>
         <div class="quantity buttons_added">
             <input type="button" value="-" class="minus">
               <input id="${sideDishesProducts[key].id}" type="number" step="1" min="0" max="" name="quantity" value="0" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
