@@ -17,31 +17,39 @@
             <img class="img-fluid w-100 my-3" src="./assets/home.jpg" alt="banner">
             <p class="display-6 fw-normal">Menu - Faça a Sua Escolha</p>
         </header>
-        <section class="container col-11 shadow rounded-3 mt-3 my-3 pb-5 ">
+        <section class="container col-11 shadow rounded-3 my-4 pb-5 ">
             <header class=" container text-center">
                 <p class="fs-4 fw-bolder mb-0 mt-3">Prato Principal</p>
                 <p class="fs-6 fw-bolder mb-3">Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
             </header>
             <div class="d-flex justify-content-around" id="mainDishes"></div>
         </section>
-        <section class="container col-11 shadow rounded-3 mt-3 my-3 pb-5 ">
+        <section class="container col-11 shadow rounded-3 my-4 pb-5 ">
             <header class=" container text-center">
                 <p class="fs-4 fw-bolder mb-0 mt-3">Acompanhamentos</p>
                 <p class="fs-6 fw-bolder mb-3">Porções para uma pessoa.</p>
             </header>
             <div class="d-flex justify-content-around" id="sideDishes"></div>
         </section>
-        <section class="container col-11 shadow rounded-3 mt-3 my-3 pb-5 text-center">
+        <section class="container col-11 shadow rounded-3 my-4 pb-5 text-center">
             <p class="fs-4 fw-bolder mb-0 mt-3">Dados Pessoais</p>
-            <div class="formContainer">
-                <form class="formPersonalData" id="formPersonalData">
-                    <input class="input" type="text" placeholder="Nome" id="name" required>
-                    <input class="input" type="tel" placeholder="Telefone" id="phone" required>
-                    <input class="input" type="email" placeholder="Email" id="email" required>
+            <div class="container">
+                <form class="container d-flex flex-column align-itens-center" id="formPersonalData">
+
+                    <input type="text" class="form-control col-11 my-2" id="name" aria-describedby="name"
+                        placeholder="Nome:" required>
+
+
+                    <input type="tel" class="form-control col-11 my-2" id="phone" aria-describedby="phone"
+                        placeholder="Telefone:" required>
+
+                    <input type="email" class="form-control col-11 my-2" id="email" aria-describedby="email"
+                        placeholder="Email:" required>
+
+                    <button class="btn btn-primary mt-4" id="btnCalcular">CALCULAR</button>
                 </form>
             </div>
         </section>
-        <button class="btn" id="btnCalcular">CALCULAR</button>
 
         <section class="shoppingCart" id="shoppingCart"></section>
     </main>
