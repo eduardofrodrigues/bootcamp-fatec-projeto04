@@ -52,7 +52,7 @@ const sideDishesProducts = {
 
 Object.keys(mainDishesProducts).forEach((key) => {
   mainDishes.innerHTML += `
-      <div class="w-25 d-flex flex-column justify-content-center align-items-center rounded-3 shadow mt-3 mb-3 p-3 text-center" id="${mainDishesProducts[key].id}">
+      <div class="w-100 m-lg-5 d-flex flex-column justify-content-center align-items-center rounded-3 shadow mt-3 mb-3 p-3 text-center" id="${mainDishesProducts[key].id}">
         <div class="w-100 h-75">
             <img class="img-fluid w-100 h-100" src="${mainDishesProducts[key].image}" alt="${mainDishesProducts[key].name}">
         </div>
@@ -69,7 +69,7 @@ Object.keys(mainDishesProducts).forEach((key) => {
 
 Object.keys(sideDishesProducts).forEach((key) => {
   sideDishes.innerHTML += `
-      <div class="w-25 d-flex flex-column justify-content-center align-items-center rounded-3 shadow mt-3 mb-3 p-3 text-center" id="${sideDishesProducts[key].id}">
+      <div class="w-100 m-lg-5 d-flex flex-column justify-content-center align-items-center rounded-3 shadow mt-3 mb-3 p-3 text-center" id="${sideDishesProducts[key].id}">
         <div class="w-100 h-75">
             <img class="img-fluid w-100 h-100" src="${sideDishesProducts[key].image}" alt="${sideDishesProducts[key].name}">
         </div>
