@@ -110,14 +110,14 @@ function createTable() {
   const name = document.getElementById("name").value;
 
   shoppingCart.innerHTML = `
-    <p class="text">Caro <strong>${name}</strong></p>
-    <p class="text">Seguem os dados do seu pedido:</p>
-    <table class="shopppigTable" id="buyedProductsTable">
+    <p class="fs-5 mt-5">Caro <strong>${name}</strong></p>
+    <p class="fs-5 mb-5">Seguem os dados do seu pedido:</p>
+    <table class="table" id="buyedProductsTable">
         <tr>
-            <th class="column">Prato</th>
-            <th class="column">Preço Unitário</th>
-            <th class="column">Quantidade</th>
-            <th class="column">Total</th>
+            <th>Prato</th>
+            <th class="d-none d-md-table-cell">Preço Unitário</th>
+            <th>Quantidade</th>
+            <th>Total</th>
         </tr>
     </table>
   `
@@ -134,7 +134,7 @@ function insertProductsOnTable(buyedProducts) {
     buyedProductsTable.innerHTML += `
       <tr>
         <td>${product.name}</td>
-        <td>${formatter.format(product.price)}</td>
+        <td class="d-none d-md-table-cell">${formatter.format(product.price)}</td>
         <td>${product.quantity}</td>
         <td>${formatter.format(totalProduct)}</td>
       </tr>
@@ -143,8 +143,8 @@ function insertProductsOnTable(buyedProducts) {
 
   const shoppingCart = document.getElementById("shoppingCart");
   shoppingCart.innerHTML += `
-    <p class="totalPrice">Preço Final: ${formatter.format(totalShopping)}</p>
-    <button class="btnLimpar" id="btnLimpar">LIMPAR SELEÇÃO</button>
+    <p class="fs-5 fw-bolder my-5">Preço Final: ${formatter.format(totalShopping)}</p>
+    <button class="btn btn-primary mt-4 w-100" id="btnLimpar">LIMPAR SELEÇÃO</button>
   `
 }
 
